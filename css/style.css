@@ -270,10 +270,10 @@ blockquote::before {
 }
 
 .related-person {
-    background: linear-gradient(180deg, #ffffff, #f8fafc);
+    background: linear-gradient(180deg, #bcd8fb, #d5c9f9);
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    padding: 6px;
+    padding: 5px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     position: relative;
     overflow: hidden;
@@ -344,7 +344,7 @@ blockquote::before {
     text-align: center;
     text-decoration: none;
     color: #ffffff;
-    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    background: linear-gradient(135deg, #bcd8fb, #baa5f7);
     border: none;
     border-radius: 8px;
     cursor: pointer;
