@@ -42,6 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    const btn = document.getElementById('btn');
+    const text = document.getElementById('digression-text');
+
+    btn.addEventListener('click', () => {
+        text.classList.toggle('open');
+        text.classList.toggle('close');
+    });
+
     window.addEventListener("scroll", setActiveLink);
     window.addEventListener("load", setActiveLink);
 
