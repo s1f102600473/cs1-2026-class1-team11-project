@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>introduce</title>
-<link rel="stylesheet" type="text/css" href="css/stail.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduce</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>海下角了</h1>
+    <header>
+        <h1>海下角了</h1>
+    </header>
+
     <div class="container">
-        <div class="sidebar">
-            <h2>目次</h2>
-            <h4>海下角了とは？</h4>
-            <h4>海下角了は何をした？</h4>
-            <h4>海下角了の生涯</h4>
-            <h4>海下角了の名言</h4>
-        </div>
-        <dev class="content"><p>内容</p></dev>
+        <aside class="sidebar">
+            <div class="toc-box">
+                <h2 id="mokuji">目次</h2>
+                <ul>
+                    <li><a href="#life">海下角了の生涯</a></li>
+                    <li><a href="#work">海下角了は何をした？</a></li>
+                    <li><a href="#quote">海下角了の名言</a></li>
+                    <li><a href="#related">関係のある人物</a></li>
+                </ul>
+                <p class="etc">etc</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section class="profile">
+                <div class="profile-text">
+                    <p>生年：xxxx</p>
+                    <p>没年：xxxx</p>
+                </div>
+                <div class="photo-box">
+                    <p>写真</p>
+                </div>
+            </section>
+
+            <section id="life">
+                <h2>海下角了の生涯</h2>
+                <p>
+                    ここに海下角了の生涯についての本文を書く
+                </p>
+            </section>
+
+            <section id="work">
+                <h2>海下角了は何をした？</h2>
+                <p>
+                    ここに海下角了の功績や活動内容を書きく
+                </p>
+            </section>
+
+            <section id="quote">
+                <h2>海下角了の名言</h2>
+                <p>
+                    ここに名言や印象的な言葉を書きく
+                </p>
+            </section>
+
+            <section id="related">
+                <h2>関係のある人物</h2>
+                <p>
+                    ここに関係人物を書く。
+                </p>
+            </section>
+        </main>
     </div>
 </body>
 </html>
