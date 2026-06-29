@@ -250,16 +250,33 @@ blockquote::before {
 
 .related-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
-.related-person {
-background: linear-gradient(180deg, #ffffff, #f8fafc);
-    border: 1px solid #e5e7eb;
+.person-desc {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    /*background: #f8fafc;
+    border: 1px solid #e5e7eb; これはなくてもいいかも？*/
     border-radius: 16px;
-    padding: 20px;
+    padding: 10px; 
+}
+
+.person-desc > a {
+    flex-shrink: 0;
+    width: 150px; 
+}
+
+.related-person {
+    background: linear-gradient(180deg, #bcd8fb, #d5c9f9);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 5px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .related-person:hover {
@@ -267,11 +284,36 @@ background: linear-gradient(180deg, #ffffff, #f8fafc);
     box-shadow: 0 12px 24px rgba(31, 41, 55, 0.1);
 }
 
-.related-person h3 {
-    margin-top: 0;
-    color: #111827;
+.related-person img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
 }
 
+.related-person p {
+    margin-top: 0;
+    color: #111827;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2px 2px 2px 2px;
+    border-radius: 6px;
+}
+
+.person-text {
+    flex-grow: 1;
+}
+
+.person-text p {
+    margin: 0;
+    color: #374151;
+    font-size: 15px;
+    line-height: 1.6;
+}
 
 
 .toc-box a.active {
@@ -302,7 +344,7 @@ background: linear-gradient(180deg, #ffffff, #f8fafc);
     text-align: center;
     text-decoration: none;
     color: #ffffff;
-    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    background: linear-gradient(135deg, #bcd8fb, #baa5f7);
     border: none;
     border-radius: 8px;
     cursor: pointer;
